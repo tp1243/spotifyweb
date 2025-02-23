@@ -7,7 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utility.css">
-
 </head>
 
 <body>
@@ -75,6 +74,7 @@
 
 
 
+
                 </div>
 
             </div>
@@ -98,10 +98,27 @@
                         </svg>
                     </div>
                 </div>
+
+                <div class="search-container">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M21.707 20.293l-4.823-4.823a8 8 0 1 0-1.414 1.414l4.823 4.823a1 1 0 0 0 1.414-1.414zM4 10a6 6 0 1 1 12 0A6 6 0 0 1 4 10z" />
+                    </svg>
+                    <input type="text" placeholder="What do you want to play?">
+                    <svg class="storage-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M3 4a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4zm2 1v14h14V5H5zm4 2h6v2H9V7zm-2 4h10v2H7v-2z" />
+                    </svg>
+                </div>
                 <div class="buttons">
                     <a href="signup.html" class="signupbtn">Sign up</a>
                     <a href="login.html" class="loginbtn">Log in</a>
+                    <button id="logout-btn" style="display:none;">Logout</button>
                 </div>
+
+
+
             </div>
             <div class="spotifyplaylists">
                 <h1>Spotify Playlists</h1>
@@ -261,7 +278,7 @@
                         <p>Diljit Dosanjh</p>
                     </div>
 
-                    <div  class="card">
+                    <div class="card">
                         <div class="play">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="60" height="60"
                                 fill="#000">
@@ -276,7 +293,7 @@
                     </div>
 
 
-                    
+
 
 
 
@@ -315,7 +332,9 @@
         </div>
     </div>
     <script src="script.js"></script>
-
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js"></script>
+ 
 </body>
 
 </html>
